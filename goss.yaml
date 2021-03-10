@@ -1,0 +1,14 @@
+port:
+  tcp:8000:
+    listening: true
+    ip:
+    - 0.0.0.0
+process:
+  python:
+    running: true
+http:
+  http://localhost:8000:
+    status: 200
+    allow-insecure: false
+    timeout: 5000
+    body: []
